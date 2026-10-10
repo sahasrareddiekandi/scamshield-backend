@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.scamshield.ClassificationLogicTest" time="0.074" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\akhil\OneDrive\Desktop\Scamshield\backend\target\test-classes;C:\Users\akhil\OneDrive\Desktop\Scamshield\backend\target\classes;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.4\spring-boot-starter-web-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.4\spring-boot-starter-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot\3.3.4\spring-boot-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.4\spring-boot-autoconfigure-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.4\spring-boot-starter-logging-3.3.4.jar;C:\Users\akhil\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\akhil\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\akhil\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\akhil\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\akhil\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\akhil\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\akhil\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.4\spring-boot-starter-json-3.3.4.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.4\spring-boot-starter-tomcat-3.3.4.jar;C:\Users\akhil\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.30\tomcat-embed-core-10.1.30.jar;C:\Users\akhil\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.30\tomcat-embed-websocket-10.1.30.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-web\6.1.13\spring-web-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-beans\6.1.13\spring-beans-6.1.13.jar;C:\Users\akhil\.m2\repository\io\micrometer\micrometer-observation\1.13.4\micrometer-observation-1.13.4.jar;C:\Users\akhil\.m2\repository\io\micrometer\micrometer-commons\1.13.4\micrometer-commons-1.13.4.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-webmvc\6.1.13\spring-webmvc-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-context\6.1.13\spring-context-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-expression\6.1.13\spring-expression-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.4\spring-boot-starter-security-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-aop\6.1.13\spring-aop-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.4\spring-boot-starter-data-jpa-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.4\spring-boot-starter-aop-3.3.4.jar;C:\Users\akhil\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.4\spring-boot-starter-jdbc-3.3.4.jar;C:\Users\akhil\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-jdbc\6.1.13\spring-jdbc-6.1.13.jar;C:\Users\akhil\.m2\repository\org\hibernate\orm\hibernate-core\6.5.3.Final\hibernate-core-6.5.3.Final.jar;C:\Users\akhil\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\akhil\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\akhil\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\akhil\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\akhil\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\akhil\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\akhil\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\akhil\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\akhil\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\akhil\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\akhil\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\akhil\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\akhil\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\akhil\.m2\repository\org\springframework\data\spring-data-jpa\3.3.4\spring-data-jpa-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\data\spring-data-commons\3.3.4\spring-data-commons-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-orm\6.1.13\spring-orm-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-tx\6.1.13\spring-tx-6.1.13.jar;C:\Users\akhil\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-aspects\6.1.13\spring-aspects-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.4\spring-boot-starter-validation-3.3.4.jar;C:\Users\akhil\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.30\tomcat-embed-el-10.1.30.jar;C:\Users\akhil\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\akhil\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.4\spring-boot-starter-data-redis-3.3.4.jar;C:\Users\akhil\.m2\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;C:\Users\akhil\.m2\repository\io\netty\netty-common\4.1.113.Final\netty-common-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-handler\4.1.113.Final\netty-handler-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-resolver\4.1.113.Final\netty-resolver-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-buffer\4.1.113.Final\netty-buffer-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.113.Final\netty-transport-native-unix-common-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-codec\4.1.113.Final\netty-codec-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-transport\4.1.113.Final\netty-transport-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\projectreactor\reactor-core\3.6.10\reactor-core-3.6.10.jar;C:\Users\akhil\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\akhil\.m2\repository\org\springframework\data\spring-data-redis\3.3.4\spring-data-redis-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\data\spring-data-keyvalue\3.3.4\spring-data-keyvalue-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-oxm\6.1.13\spring-oxm-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-context-support\6.1.13\spring-context-support-6.1.13.jar;C:\Users\akhil\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\akhil\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\akhil\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;C:\Users\akhil\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;C:\Users\akhil\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.4\spring-boot-starter-test-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-test\3.3.4\spring-boot-test-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.4\spring-boot-test-autoconfigure-3.3.4.jar;C:\Users\akhil\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\akhil\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\akhil\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\akhil\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\akhil\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\akhil\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\akhil\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\akhil\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\akhil\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\akhil\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\akhil\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\akhil\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\akhil\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\akhil\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\akhil\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\akhil\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\akhil\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\akhil\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\akhil\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\akhil\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\akhil\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\akhil\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\akhil\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-core\6.1.13\spring-core-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-jcl\6.1.13\spring-jcl-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-test\6.1.13\spring-test-6.1.13.jar;C:\Users\akhil\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-test\6.3.3\spring-security-test-6.3.3.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\akhil\AppData\Local\Temp\surefire13196797778267473693\surefirebooter-20261007190858565_3.jar C:\Users\akhil\AppData\Local\Temp\surefire13196797778267473693 2026-10-07T19-08-58_306-jvmRun1 surefire-20261007190858565_1tmp surefire_0-20261007190858565_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\akhil\OneDrive\Desktop\Scamshield\backend\target\test-classes;C:\Users\akhil\OneDrive\Desktop\Scamshield\backend\target\classes;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.4\spring-boot-starter-web-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.4\spring-boot-starter-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot\3.3.4\spring-boot-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.4\spring-boot-autoconfigure-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.4\spring-boot-starter-logging-3.3.4.jar;C:\Users\akhil\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\akhil\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\akhil\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\akhil\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\akhil\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\akhil\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\akhil\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.4\spring-boot-starter-json-3.3.4.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.4\spring-boot-starter-tomcat-3.3.4.jar;C:\Users\akhil\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.30\tomcat-embed-core-10.1.30.jar;C:\Users\akhil\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.30\tomcat-embed-websocket-10.1.30.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-web\6.1.13\spring-web-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-beans\6.1.13\spring-beans-6.1.13.jar;C:\Users\akhil\.m2\repository\io\micrometer\micrometer-observation\1.13.4\micrometer-observation-1.13.4.jar;C:\Users\akhil\.m2\repository\io\micrometer\micrometer-commons\1.13.4\micrometer-commons-1.13.4.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-webmvc\6.1.13\spring-webmvc-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-context\6.1.13\spring-context-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-expression\6.1.13\spring-expression-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.4\spring-boot-starter-security-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-aop\6.1.13\spring-aop-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.4\spring-boot-starter-data-jpa-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.4\spring-boot-starter-aop-3.3.4.jar;C:\Users\akhil\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.4\spring-boot-starter-jdbc-3.3.4.jar;C:\Users\akhil\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-jdbc\6.1.13\spring-jdbc-6.1.13.jar;C:\Users\akhil\.m2\repository\org\hibernate\orm\hibernate-core\6.5.3.Final\hibernate-core-6.5.3.Final.jar;C:\Users\akhil\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\akhil\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\akhil\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\akhil\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\akhil\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\akhil\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\akhil\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\akhil\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\akhil\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\akhil\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\akhil\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\akhil\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\akhil\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\akhil\.m2\repository\org\springframework\data\spring-data-jpa\3.3.4\spring-data-jpa-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\data\spring-data-commons\3.3.4\spring-data-commons-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-orm\6.1.13\spring-orm-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-tx\6.1.13\spring-tx-6.1.13.jar;C:\Users\akhil\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-aspects\6.1.13\spring-aspects-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.4\spring-boot-starter-validation-3.3.4.jar;C:\Users\akhil\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.30\tomcat-embed-el-10.1.30.jar;C:\Users\akhil\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\akhil\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.4\spring-boot-starter-data-redis-3.3.4.jar;C:\Users\akhil\.m2\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;C:\Users\akhil\.m2\repository\io\netty\netty-common\4.1.113.Final\netty-common-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-handler\4.1.113.Final\netty-handler-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-resolver\4.1.113.Final\netty-resolver-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-buffer\4.1.113.Final\netty-buffer-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.113.Final\netty-transport-native-unix-common-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-codec\4.1.113.Final\netty-codec-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\netty\netty-transport\4.1.113.Final\netty-transport-4.1.113.Final.jar;C:\Users\akhil\.m2\repository\io\projectreactor\reactor-core\3.6.10\reactor-core-3.6.10.jar;C:\Users\akhil\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\akhil\.m2\repository\org\springframework\data\spring-data-redis\3.3.4\spring-data-redis-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\data\spring-data-keyvalue\3.3.4\spring-data-keyvalue-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-oxm\6.1.13\spring-oxm-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-context-support\6.1.13\spring-context-support-6.1.13.jar;C:\Users\akhil\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\akhil\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\akhil\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.5\jjwt-api-0.12.5.jar;C:\Users\akhil\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.5\jjwt-impl-0.12.5.jar;C:\Users\akhil\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.5\jjwt-jackson-0.12.5.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\akhil\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.4\spring-boot-starter-test-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-test\3.3.4\spring-boot-test-3.3.4.jar;C:\Users\akhil\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.4\spring-boot-test-autoconfigure-3.3.4.jar;C:\Users\akhil\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\akhil\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\akhil\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\akhil\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\akhil\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\akhil\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\akhil\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\akhil\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\akhil\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\akhil\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\akhil\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\akhil\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\akhil\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\akhil\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\akhil\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\akhil\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\akhil\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\akhil\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\akhil\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\akhil\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\akhil\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\akhil\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\akhil\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-core\6.1.13\spring-core-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-jcl\6.1.13\spring-jcl-6.1.13.jar;C:\Users\akhil\.m2\repository\org\springframework\spring-test\6.1.13\spring-test-6.1.13.jar;C:\Users\akhil\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-test\6.3.3\spring-security-test-6.3.3.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\akhil\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\akhil"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\akhil\OneDrive\Desktop\Scamshield\backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\akhil\AppData\Local\Temp\surefire13196797778267473693\surefirebooter-20261007190858565_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.17+10"/>
+    <property name="user.name" value="akhil"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.17+10"/>
+    <property name="localRepository" value="C:\Users\akhil\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\akhil\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.17"/>
+    <property name="user.dir" value="C:\Users\akhil\OneDrive\Desktop\Scamshield\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="22240"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/akhil/.gemini/antigravity/bin;C:\Users\akhil\AppData\Roaming\Antigravity\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\akhil\Downloads\apache-maven-3.9.16-bin;C:\Users\akhil\Downloads\apache-maven-3.9.16-bin (1)\apache-maven-3.9.16\bin;C:\Users\akhil\Downloads\spring-boot-cli-4.1.0-bin\spring-4.1.0\bin;C:\Users\akhil\Downloads\mysql-installer-community-8.0.46.0.msi;C:\Users\akhil\Downloads\mysql-installer-community-8.0.46.0.msi;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\jre1.8.0_471\bin;C:\Users\akhil\AppData\Local\Microsoft\WindowsApps;C:\Users\akhil\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\akhil\AppData\Local\Programs\Antigravity\bin;C:\Users\akhil\AppData\Roaming\npm;C:\Users\akhil\Downloads\apache-maven-3.9.16-bin;C:\Users\akhil\Downloads\apache-maven-3.9.16-bin (1)\apache-maven-3.9.16\bin;C:\Users\akhil\Downloads\spring-boot-cli-4.1.0-bin\spring-4.1.0\bin;C:\Users\akhil\Downloads\mysql-installer-community-8.0.46.0.msi;C:\Users\akhil\Downloads\mysql-installer-community-8.0.46.0.msi;C:\Program Files\MySQL\MySQL Server 8.0\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.17+10"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[scamshield-backend] "/>
+  </properties>
+  <testcase name="testMediumRiskUrl1" classname="com.scamshield.ClassificationLogicTest" time="0.025">
+    <system-out><![CDATA[2026-10-07T19:09:13.051+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: rawUrl='https://example.com/account/verify', rawScore=45, finalScore=45, riskLevel=MEDIUM, indicatorsCount=1, indicators=[SENSITIVE_ACCOUNT_PATH]
+==================================================
+CATEGORY: MEDIUM-RISK URL
+INPUT: https://example.com/account/verify
+SCORE: 45
+RISK LEVEL: MEDIUM
+DETECTED REASONS:
+  - [SENSITIVE_ACCOUNT_PATH] Sensitive account verification path (/account/verify) hosted on an unverified domain. (weight: 45, severity: MEDIUM)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testMediumRiskUrl2" classname="com.scamshield.ClassificationLogicTest" time="0.001">
+    <system-out><![CDATA[2026-10-07T19:09:13.071+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: rawUrl='https://example.com/offer', rawScore=42, finalScore=42, riskLevel=MEDIUM, indicatorsCount=1, indicators=[PROMOTIONAL_LANDING_PATH]
+==================================================
+CATEGORY: MEDIUM-RISK URL
+INPUT: https://example.com/offer
+SCORE: 42
+RISK LEVEL: MEDIUM
+DETECTED REASONS:
+  - [PROMOTIONAL_LANDING_PATH] Promotional offer landing page (/offer) hosted on an unverified domain. (weight: 42, severity: MEDIUM)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testMediumRiskUrl3" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.073+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: rawUrl='https://example.com/update', rawScore=42, finalScore=42, riskLevel=MEDIUM, indicatorsCount=1, indicators=[ACCOUNT_UPDATE_PATH]
+==================================================
+CATEGORY: MEDIUM-RISK URL
+INPUT: https://example.com/update
+SCORE: 42
+RISK LEVEL: MEDIUM
+DETECTED REASONS:
+  - [ACCOUNT_UPDATE_PATH] Account or system update directive (/update) hosted on an unverified domain. (weight: 42, severity: MEDIUM)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testHighRiskUrl1" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.077+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: rawUrl='https://secure-bank-verify-login.example.com', rawScore=80, finalScore=80, riskLevel=HIGH, indicatorsCount=2, indicators=[URL_STRUCTURE, CREDENTIAL_HARVESTING_HOST]
+==================================================
+CATEGORY: HIGH-RISK URL
+INPUT: https://secure-bank-verify-login.example.com
+SCORE: 80
+RISK LEVEL: HIGH
+DETECTED REASONS:
+  - [URL_STRUCTURE] Excessive hyphens in domain name (3 hyphens), a common pattern in machine-generated phishing domains. (weight: 15, severity: MEDIUM)
+  - [CREDENTIAL_HARVESTING_HOST] Deceptive hostname impersonating a banking verification and login portal: secure-bank-verify-login.example.com (weight: 65, severity: HIGH)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testHighRiskUrl2" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.079+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: rawUrl='http://bit.ly/verify-bank-otp', rawScore=85, finalScore=85, riskLevel=HIGH, indicatorsCount=3, indicators=[URL_PROTOCOL, SHORTENED_URL, CREDENTIAL_HARVESTING_URL]
+==================================================
+CATEGORY: HIGH-RISK URL
+INPUT: http://bit.ly/verify-bank-otp
+SCORE: 85
+RISK LEVEL: HIGH
+DETECTED REASONS:
+  - [URL_PROTOCOL] Potentially insecure connection: The URL uses unencrypted HTTP instead of HTTPS. (weight: 15, severity: MEDIUM)
+  - [SHORTENED_URL] URL shortener domain (bit.ly) concealing the true destination target. (weight: 20, severity: MEDIUM)
+  - [CREDENTIAL_HARVESTING_URL] Severe credential harvesting parameters detected in shortened URL: OTP and banking verification. (weight: 50, severity: HIGH)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testHighRiskUrl3" classname="com.scamshield.ClassificationLogicTest" time="0.001">
+    <system-out><![CDATA[2026-10-07T19:09:13.082+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: rawUrl='http://account-suspended-login.example.com', rawScore=90, finalScore=90, riskLevel=HIGH, indicatorsCount=3, indicators=[URL_PROTOCOL, URL_STRUCTURE, ACCOUNT_SUSPENSION_BAIT_HOST]
+==================================================
+CATEGORY: HIGH-RISK URL
+INPUT: http://account-suspended-login.example.com
+SCORE: 90
+RISK LEVEL: HIGH
+DETECTED REASONS:
+  - [URL_PROTOCOL] Potentially insecure connection: The URL uses unencrypted HTTP instead of HTTPS. (weight: 15, severity: MEDIUM)
+  - [URL_STRUCTURE] Multiple hyphens in domain name (2 hyphens) frequently seen in deceptive hostnames. (weight: 10, severity: MEDIUM)
+  - [ACCOUNT_SUSPENSION_BAIT_HOST] Deceptive hostname engineering false account suspension and login capture: account-suspended-login.example.com (weight: 65, severity: HIGH)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testLowRiskMessage1" classname="com.scamshield.ClassificationLogicTest" time="0.004">
+    <system-out><![CDATA[2026-10-07T19:09:13.087+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=0, finalScore=0, riskLevel=LOW, primaryCategory=Clean / Low Risk, indicatorsCount=0, indicators=[]
+==================================================
+CATEGORY: LOW-RISK MESSAGE
+INPUT: Hello, how are you today?
+SCORE: 0
+RISK LEVEL: LOW
+DETECTED REASONS:
+  - None (Clean Content)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testLowRiskMessage2" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.090+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=0, finalScore=0, riskLevel=LOW, primaryCategory=Clean / Low Risk, indicatorsCount=0, indicators=[]
+==================================================
+CATEGORY: LOW-RISK MESSAGE
+INPUT: Your meeting is scheduled for 3 PM tomorrow.
+SCORE: 0
+RISK LEVEL: LOW
+DETECTED REASONS:
+  - None (Clean Content)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testLowRiskMessage3" classname="com.scamshield.ClassificationLogicTest" time="0.001">
+    <system-out><![CDATA[2026-10-07T19:09:13.092+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=0, finalScore=0, riskLevel=LOW, primaryCategory=Clean / Low Risk, indicatorsCount=0, indicators=[]
+==================================================
+CATEGORY: LOW-RISK MESSAGE
+INPUT: Your order has been delivered successfully.
+SCORE: 0
+RISK LEVEL: LOW
+DETECTED REASONS:
+  - None (Clean Content)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testMediumRiskMessage1" classname="com.scamshield.ClassificationLogicTest" time="0.003">
+    <system-out><![CDATA[2026-10-07T19:09:13.095+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=45, finalScore=45, riskLevel=MEDIUM, primaryCategory=Account Review, indicatorsCount=2, indicators=[ACCOUNT_VERIFICATION_NOTICE, MODERATE_URGENCY]
+==================================================
+CATEGORY: MEDIUM-RISK MESSAGE
+INPUT: Your account needs verification soon. Please review your account details.
+SCORE: 45
+RISK LEVEL: MEDIUM
+DETECTED REASONS:
+  - [ACCOUNT_VERIFICATION_NOTICE] Routine account verification or review directive without overt suspension threats. (weight: 25, severity: MEDIUM)
+  - [MODERATE_URGENCY] Moderate time-sensitivity or upcoming expiration notice detected. (weight: 20, severity: MEDIUM)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testMediumRiskMessage2" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.098+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=65, finalScore=65, riskLevel=MEDIUM, primaryCategory=Promotional Message, indicatorsCount=3, indicators=[PROMOTIONAL_LURE, MODERATE_URGENCY, CALL_TO_ACTION_LINK]
+==================================================
+CATEGORY: MEDIUM-RISK MESSAGE
+INPUT: You have a limited-time offer. Click the link to learn more.
+SCORE: 65
+RISK LEVEL: MEDIUM
+DETECTED REASONS:
+  - [PROMOTIONAL_LURE] Promotional offer or marketing incentive encouraging recipient engagement. (weight: 25, severity: MEDIUM)
+  - [MODERATE_URGENCY] Moderate time-sensitivity or upcoming expiration notice detected. (weight: 20, severity: MEDIUM)
+  - [CALL_TO_ACTION_LINK] Directive commanding user to click an external link, portal, or review link. (weight: 20, severity: MEDIUM)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testMediumRiskMessage3" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.101+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=45, finalScore=45, riskLevel=MEDIUM, primaryCategory=Billing Notice, indicatorsCount=2, indicators=[BILLING_SUBSCRIPTION_NOTICE, MODERATE_URGENCY]
+==================================================
+CATEGORY: MEDIUM-RISK MESSAGE
+INPUT: Your subscription is expiring soon. Please review your payment details.
+SCORE: 45
+RISK LEVEL: MEDIUM
+DETECTED REASONS:
+  - [BILLING_SUBSCRIPTION_NOTICE] Subscription renewal or payment details review notification. (weight: 25, severity: MEDIUM)
+  - [MODERATE_URGENCY] Moderate time-sensitivity or upcoming expiration notice detected. (weight: 20, severity: MEDIUM)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testHighRiskMessage1" classname="com.scamshield.ClassificationLogicTest" time="0.003">
+    <system-out><![CDATA[2026-10-07T19:09:13.106+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=110, finalScore=100, riskLevel=HIGH, primaryCategory=Credential Harvesting, indicatorsCount=4, indicators=[URGENCY_LANGUAGE, CREDENTIAL_HARVESTING, ACCOUNT_SECURITY_BAIT, CALL_TO_ACTION_LINK]
+==================================================
+CATEGORY: HIGH-RISK MESSAGE
+INPUT: Your bank account will be blocked today. Verify your account immediately using this link and enter your OTP.
+SCORE: 100
+RISK LEVEL: HIGH
+DETECTED REASONS:
+  - [URGENCY_LANGUAGE] Artificial urgency or threatening tone detected, pressuring recipient into hasty decision-making. (weight: 25, severity: HIGH)
+  - [CREDENTIAL_HARVESTING] Solicitation of sensitive security credentials (OTP, banking passwords, PINs, SSN, or private keys). (weight: 35, severity: HIGH)
+  - [ACCOUNT_SECURITY_BAIT] False account security alarm, KYC expiration, or suspension threat designed to trigger panic login behavior. (weight: 30, severity: HIGH)
+  - [CALL_TO_ACTION_LINK] Directive commanding user to click an external link, portal, or review link. (weight: 20, severity: MEDIUM)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testHighRiskMessage2" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.108+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=85, finalScore=85, riskLevel=HIGH, primaryCategory=Financial Extortion / Payment, indicatorsCount=3, indicators=[URGENCY_LANGUAGE, PAYMENT_REQUEST, PRIZE_LOTTERY_SCAM]
+==================================================
+CATEGORY: HIGH-RISK MESSAGE
+INPUT: Congratulations! You won a ₹50,000 prize. Pay ₹999 processing fee immediately to claim your prize.
+SCORE: 85
+RISK LEVEL: HIGH
+DETECTED REASONS:
+  - [URGENCY_LANGUAGE] Artificial urgency or threatening tone detected, pressuring recipient into hasty decision-making. (weight: 25, severity: HIGH)
+  - [PAYMENT_REQUEST] Request for untraceable or advance fees / payment methods (cryptocurrency, gift cards, wire transfer, processing fee). (weight: 30, severity: HIGH)
+  - [PRIZE_LOTTERY_SCAM] Unsolicited prize, lottery winning, or high-return investment bait without prior interaction. (weight: 30, severity: HIGH)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testHighRiskMessage3" classname="com.scamshield.ClassificationLogicTest" time="0.001">
+    <system-out><![CDATA[2026-10-07T19:09:13.110+05:30  INFO 22240 --- [scamshield-backend] [           main] c.s.service.MessageAnalysisService       : MESSAGE_ANALYSIS: rawScore=85, finalScore=85, riskLevel=HIGH, primaryCategory=Credential Harvesting, indicatorsCount=3, indicators=[CREDENTIAL_HARVESTING, ACCOUNT_SECURITY_BAIT, CALL_TO_ACTION_LINK]
+==================================================
+CATEGORY: HIGH-RISK MESSAGE
+INPUT: Your KYC has expired. Click the link below and enter your banking password and OTP.
+SCORE: 85
+RISK LEVEL: HIGH
+DETECTED REASONS:
+  - [CREDENTIAL_HARVESTING] Solicitation of sensitive security credentials (OTP, banking passwords, PINs, SSN, or private keys). (weight: 35, severity: HIGH)
+  - [ACCOUNT_SECURITY_BAIT] False account security alarm, KYC expiration, or suspension threat designed to trigger panic login behavior. (weight: 30, severity: HIGH)
+  - [CALL_TO_ACTION_LINK] Directive commanding user to click an external link, portal, or review link. (weight: 20, severity: MEDIUM)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testLowRiskUrl1" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.114+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: trusted domain 'www.google.com', finalScore=0, level=LOW
+==================================================
+CATEGORY: LOW-RISK URL
+INPUT: https://www.google.com
+SCORE: 0
+RISK LEVEL: LOW
+DETECTED REASONS:
+  - None (Clean Content)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testLowRiskUrl2" classname="com.scamshield.ClassificationLogicTest" time="0.002">
+    <system-out><![CDATA[2026-10-07T19:09:13.116+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: trusted domain 'www.wikipedia.org', finalScore=0, level=LOW
+==================================================
+CATEGORY: LOW-RISK URL
+INPUT: https://www.wikipedia.org
+SCORE: 0
+RISK LEVEL: LOW
+DETECTED REASONS:
+  - None (Clean Content)
+==================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testLowRiskUrl3" classname="com.scamshield.ClassificationLogicTest" time="0.001">
+    <system-out><![CDATA[2026-10-07T19:09:13.118+05:30  INFO 22240 --- [scamshield-backend] [           main] c.scamshield.service.UrlAnalysisService  : URL_ANALYSIS: trusted domain 'www.microsoft.com', finalScore=0, level=LOW
+==================================================
+CATEGORY: LOW-RISK URL
+INPUT: https://www.microsoft.com
+SCORE: 0
+RISK LEVEL: LOW
+DETECTED REASONS:
+  - None (Clean Content)
+==================================================
+]]></system-out>
+  </testcase>
+</testsuite>
