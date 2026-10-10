@@ -32,7 +32,7 @@ public class SecurityConfig {
     private final CustomUserDetailsService userDetailsService;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
 
-    @Value("${scamshield.cors.allowed-origins:http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173}")
+    @Value("${scamshield.cors.allowed-origins:http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173,"https://scamshield-frontend-tan.vercel.app/}")
     private String allowedOrigins;
 
     public SecurityConfig(CustomUserDetailsService userDetailsService,
